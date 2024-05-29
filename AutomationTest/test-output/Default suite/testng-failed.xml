@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScriptJulesAI">
+      <class name="AutomationAssignments.SpringFinance">
         <methods>
-          <include name="tearDown"/>
-          <include name="addPurchase"/>
-          <include name="setUp"/>
+          <include name="testInvalidEmails" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
+          <include name="testNameLength" invocation-numbers="0 1 2 3"/>
+          <include name="testMandatoryFields" invocation-numbers="0 1 2 3 4"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- TestScriptJulesAI -->
+      </class> <!-- AutomationAssignments.SpringFinance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
